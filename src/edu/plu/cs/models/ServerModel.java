@@ -1,46 +1,32 @@
 /*
- * The MIT License
- *
- * Copyright 2015 dabockster.
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package edu.plu.cs.models;
 
+import edu.plu.cs.controllers.ServerController;
+import edu.plu.cs.controllers.UserConnection;
+import java.util.ArrayList;
+
 /**
  *
- * @author dabockster
+ * @author Timothy Ernst
  */
 public class ServerModel {
     
-    private String message;
+    private final ServerController controller;
     
-    public ServerModel(){
-        
-    }
+    public ArrayList<UserConnection> online; //everyone that is logged in
+    public ArrayList<UserProfile> allRegisteredPlayers; //all possible players
     
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
     
+    /**
+     * CONSTRUCTOR
+     * Creates a new ServerModel object and sets its controller equal to controller
+     * @param controller the ServerController for this ServerModel
+     */
+    public ServerModel(ServerController controller){
+        this.controller = controller;
+    }
 }

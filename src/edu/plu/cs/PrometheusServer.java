@@ -36,10 +36,6 @@ public class PrometheusServer {
      */
     public static void main(String[] args) {
         ServerController controller = new ServerController();
-        
-        //stuff
-        controller.setMessage("Hello World");
-        controller.printMessage();
     }
     
 }
