@@ -90,11 +90,6 @@ public class ServerView extends javax.swing.JFrame {
         portLabel.setText("Port Number:");
 
         addressTF.setEditable(false);
-        addressTF.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addressTFActionPerformed(evt);
-            }
-        });
 
         portTF.setToolTipText("");
 
@@ -224,10 +219,6 @@ public class ServerView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void addressTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressTFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addressTFActionPerformed
 
     private void buildServerButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buildServerButton
         int portNum = Integer.parseInt(portTF.getText());
