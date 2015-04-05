@@ -5,7 +5,6 @@
  */
 package edu.plu.cs.controllers;
 
-import edu.plu.cs.controllers.ClientConnectionController;
 import edu.plu.cs.models.ServerModel;
 import edu.plu.cs.models.UserProfile;
 import edu.plu.cs.views.ServerView;
@@ -31,8 +30,6 @@ public class ServerController {
     public ArrayList<UserConnection> connectedClients;
     private String ipAddress;
     
-    
-    
     /**
      * CONSTRUCTOR
      * Obtains IP address of the current machine and creates a ServerView.
@@ -49,7 +46,6 @@ public class ServerController {
             view.serverFeedback("Failed to identify this machine's IP address.");
             Logger.getLogger(ServerController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        view.pack();
         view.setVisible(true);
     }
     
@@ -144,6 +140,5 @@ public class ServerController {
     public void generateNewClientView(){
         ClientConnectionController newClient = new ClientConnectionController();
     }
-
 
 }

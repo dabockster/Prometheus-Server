@@ -40,6 +40,7 @@ public class UserProfile {
      * Returns a string representation of this UserProfile object
      * @return 
      */
+    @Override
     public String toString(){
         //returns a string with <&> seperating 
         return null;

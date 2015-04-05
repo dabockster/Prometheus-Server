@@ -13,7 +13,7 @@ import edu.plu.cs.controllers.ServerController;
  */
 public class ServerView extends javax.swing.JFrame {
     
-    private final ServerController controller;
+    private ServerController controller;
   
     /**
      * CONSTRUCTOR
