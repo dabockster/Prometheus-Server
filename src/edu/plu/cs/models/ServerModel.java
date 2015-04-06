@@ -15,11 +15,10 @@ import java.util.ArrayList;
  */
 public class ServerModel {
     
-    private final ServerController controller;
+    private ServerController controller;
     
-    public ArrayList<UserConnection> online; //everyone that is logged in
-    public ArrayList<UserProfile> allRegisteredPlayers; //all possible players
-    
+    private ArrayList<UserConnection> online; //everyone that is logged in
+    private ArrayList<UserProfile> allRegisteredPlayers; //all possible players
     
     /**
      * CONSTRUCTOR
@@ -29,4 +28,6 @@ public class ServerModel {
     public ServerModel(ServerController controller){
         this.controller = controller;
     }
+    
+    
 }
